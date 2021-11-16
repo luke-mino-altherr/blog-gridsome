@@ -2,6 +2,7 @@
   <div class="w-screen h-screen layout">
     <header class="">
       <NavBar />
+      <hr class="mb-3 lg:mb-0 lg:invisible">
       <SideNav />
       <hr class="mb-7">
     </header>
