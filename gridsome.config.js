@@ -14,6 +14,8 @@ if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require(
 
 module.exports = {
   siteName: 'Min-Alt',
+  siteUrl: 'https://luke-mino-altherr.github.io',
+  pathPrefix: '/blog-gridsome',
   plugins: [
 /*     {
       use: "gridsome-plugin-tailwindcss",
