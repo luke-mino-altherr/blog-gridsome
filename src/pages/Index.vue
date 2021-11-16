@@ -1,8 +1,7 @@
 <template>
   <Layout>
 
-    <g-image src="/img/DSCF9207.jpg"/>
-
+    <g-image src="~/assets/img/DSCF9207.jpg"/>
 
   </Layout>
 </template>
