@@ -10,6 +10,9 @@
     .logo {
         @apply text-6xl tracking-wide text-green-700 uppercase;
     }
+    .logo-content {
+        @apply text-lg tracking-wide text-green-700 uppercase;
+    }
     @media (min-width: 1024px){
         .vertical-orientation {
             writing-mode: vertical-rl;
