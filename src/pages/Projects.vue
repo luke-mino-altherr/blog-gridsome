@@ -2,7 +2,7 @@
   <Layout>
     <div class="grid gap-6 lg:grid-cols-2">
       <div v-for="{ node } in $page.projects.edges" :key="node.id">
-        <g-link :to="node.path" >
+        <component :is="node.demoSite?'a':'g-link'" :href="node.demoSite" :to="node.path">
           <div class="px-6 py-4 border rounded border-gray-light">
             <div class="mb-2 text-lg">{{ node.title }}</div>
             <p class="text-base text-gray-700">{{ node.description }}</p>
@@ -14,7 +14,7 @@
               {{ tag }}
             </div>
           </div>
-        </g-link>
+        </component>
       </div>
     </div>
   </Layout>
@@ -35,6 +35,7 @@ query {
       node {
         id
         path
+        demoSite
         slug
         title
         description
