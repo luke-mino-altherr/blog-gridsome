@@ -10,18 +10,19 @@ module.exports = {
         '4/5': '80%',
         '9/10': '90%',
       },
-      typography: {
+      typography: (theme) => ({
         DEFAULT: {
           css: {
             h1: {
-              fontWeight: '400'
+              fontWeight: '400',
+              color: theme('colors.green.700')
             },
             h2: {
               fontWeight: '600'
             }
           }
         }
-      }
+      })
     }
   },
   variants: {
