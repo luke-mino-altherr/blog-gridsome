@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <div class="grid lg:grid-cols-2">
+    <div class="grid gap-6 lg:grid-cols-2">
       <div v-for="{ node } in $page.projects.edges" :key="node.id">
         <g-link :to="node.path" >
-          <div class="px-6 py-4 m-4 border rounded border-gray-light">
+          <div class="px-6 py-4 border rounded border-gray-light">
             <div class="mb-2 text-lg">{{ node.title }}</div>
             <p class="text-base text-gray-700">{{ node.description }}</p>
             <div
@@ -30,11 +30,12 @@ export default {
 
 <page-query>
 query {
-  projects: allProject {
+  projects: allProject(sortBy: "dateBuilt", order: DESC) {
     edges {
       node {
         id
         path
+        slug
         title
         description
         tags

@@ -15,6 +15,9 @@ module.exports = {
           css: {
             h1: {
               fontWeight: '400'
+            },
+            h2: {
+              fontWeight: '600'
             }
           }
         }

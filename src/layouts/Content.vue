@@ -1,6 +1,7 @@
 <template>
   <div class="w-screen h-screen layout">
-    <header class="">
+    <header class="sticky top-0 bg-white">
+      <div class="h-1"></div>
       <NavBarContent />
       <SideNav />
       <hr class="mb-7">
@@ -31,11 +32,4 @@ export default {
 
 
 <style>
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
 </style>

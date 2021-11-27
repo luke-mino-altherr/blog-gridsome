@@ -2,6 +2,7 @@
 slug: "bpm-detector"
 description: Parallelized implementations of Scheirer's beat detection algorithm in C and Python.
 tags: ["c", "openmp", "mpi", "python", "numpy"]
+dateBuilt: "2017-01-01"
 ---
 # BPM Detector
 
