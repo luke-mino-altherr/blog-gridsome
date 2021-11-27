@@ -1,8 +1,8 @@
 <template>
   <div class="w-screen h-screen layout">
-    <header class="">
-      <NavBar />
-      <hr class="mb-3 lg:mb-0 lg:invisible">
+    <header class="sticky top-0 bg-white">
+      <div class="h-1"></div>
+      <NavBarContent />
       <SideNav />
       <hr class="mb-7">
     </header>
@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import NavBar from "~/components/NavBar.vue";
+import NavBarContent from "~/components/NavBarContent.vue";
 import SideNav from "~/components/SideNav.vue";
 import Footer from "~/components/Footer.vue"
 
 export default {
   components: {
-    NavBar,
+    NavBarContent,
     SideNav,
     Footer
   }

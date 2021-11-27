@@ -2,7 +2,7 @@
   <div>
     <hr class="mb-3">
     <div class="flex justify-between">
-      <div class="flex items-center w-1/2">
+      <div class="flex items-center w-1/2 font-mono text-xs">
         <p>Built and Designed by Luke Mino-Altherr</p>
       </div>
       <div class="flex flex-col justify-center flex-grow w-1/2 text-right">
