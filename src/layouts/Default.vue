@@ -6,7 +6,7 @@
       <SideNav />
       <hr class="mb-7">
     </header>
-    <main class="flex items-center justify-center">
+    <main class="items-center justify-center">
       <slot />
     </main>
     <footer class="pt-7">

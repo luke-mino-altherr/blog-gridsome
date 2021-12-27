@@ -19,4 +19,8 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.component('ContentLayout', ContentLayout);
   Vue.component('font-awesome', FontAwesomeIcon);
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;600;800&display=swap'
+  });
 }

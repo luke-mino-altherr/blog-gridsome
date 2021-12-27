@@ -11,7 +11,7 @@ const postcssPlugins = [
 ]
 
 module.exports = {
-  siteName: 'Min-Alt',
+  siteName: 'Min | Alt',
   siteUrl: 'https://luke-mino-altherr.github.io',
   pathPrefix: '/blog-gridsome',
   plugins: [
@@ -35,6 +35,16 @@ module.exports = {
         }
       }
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/static/*.md',
+        typeName: 'About',
+        remark: {
+          //Config options can be added here
+        }
+      }
+    },
   ],
   transformers: {
     remark: {
@@ -52,6 +62,12 @@ module.exports = {
       {
         path: '/projects/:slug',
         component: './src/templates/Project.vue'
+      }
+    ],
+    About: [
+      {
+        path: '/about',
+        component: './src/templates/About.vue'
       }
     ]
   },
