@@ -1,7 +1,15 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'sans': ['Overpass', ...defaultTheme.fontFamily.sans],
+      'serif': [...defaultTheme.fontFamily.serif],
+      'mono': [...defaultTheme.fontFamily.mono]
+    },
     extend: {
       maxWidth: {
         '1/4': '25%',
