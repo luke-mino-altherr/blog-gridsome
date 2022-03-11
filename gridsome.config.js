@@ -12,8 +12,8 @@ const postcssPlugins = [
 
 module.exports = {
   siteName: 'Min | Alt',
-  siteUrl: 'https://luke-mino-altherr.github.io',
-  pathPrefix: '/blog-gridsome',
+  siteUrl: 'https://min-alt.com',
+  pathPrefix: '',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
