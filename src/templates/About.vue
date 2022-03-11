@@ -6,7 +6,13 @@
     <div class="clear-none max-w-screen-md prose" v-html="$page.about.edges[0].node.content" />
   </Layout>
 </template>
-
+<script>
+export default {
+  metaInfo: {
+    title: 'About'
+  }
+}
+</script>
 <page-query>
 query {
   about: allAbout {
